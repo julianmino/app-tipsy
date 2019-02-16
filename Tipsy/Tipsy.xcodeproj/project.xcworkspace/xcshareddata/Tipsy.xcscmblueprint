@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5D3DC65064EA899ABC1BBEF00C7F5E0021E2D28A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "645020609B76D89355D221FB28532DC987467A74" : 9223372036854775807,
+    "5D3DC65064EA899ABC1BBEF00C7F5E0021E2D28A" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DDA9E7D5-A665-4277-800E-407B1751AC19",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "645020609B76D89355D221FB28532DC987467A74" : "",
+    "5D3DC65064EA899ABC1BBEF00C7F5E0021E2D28A" : "app-tipsy\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Tipsy",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Tipsy\/Tipsy.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:julianmino\/app-tipsy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5D3DC65064EA899ABC1BBEF00C7F5E0021E2D28A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:julianmino\/provisional-repo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "645020609B76D89355D221FB28532DC987467A74"
+    }
+  ]
+}
