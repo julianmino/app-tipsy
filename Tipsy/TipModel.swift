@@ -28,18 +28,20 @@ class TipModel {
             return _tipAmount
         }
         set {
-            _billAmount = newValue
+            _tipAmount = newValue
         }
     }
     
     var tipAmount: Double {
-        
+            
             return _tipAmount
+        
     }
     
     var totalAmount: Double {
         
             return _totalAmount
+        
     }
     
 
