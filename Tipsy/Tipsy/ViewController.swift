@@ -16,8 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var percentSlider: UISlider!
     @IBOutlet weak var tipAmountLabel: UILabel!
     @IBOutlet weak var totalAmountLabel: UILabel!
+    @IBOutlet weak var quantityPeople: UITextField!
+    @IBOutlet weak var perPersonLabel: UILabel!
+    @IBOutlet weak var peopleLabel: UILabel!
     
-    var tip = TipModel(billAmount: 0.0, tipPercent: 0.0)
+    var tip = TipModel(billAmount: 0.0, tipPercent: 0.0, quantity: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +32,11 @@ class ViewController: UIViewController {
     func setTipCalculationValues() {
         tip.tipPercent = Double(percentSlider.value)
         tip.billAmount = ((textField.text)! as NSString).doubleValue
+        if quantityPeople.hasText {
+            tip.quantity = ((quantityPeople.text)! as NSString).doubleValue
+        } else {
+            tip.quantity = 1
+        }
         tip.calculateTip()
     }
     
@@ -36,8 +44,16 @@ class ViewController: UIViewController {
         tipAmountLabel.text = String(format: "$%0.2f", tip.tipAmount)
         totalAmountLabel.text = String(format: "$%0.2f", tip.totalAmount)
         tipPercentLabel.text = "Tip: \(Int(percentSlider.value * 100))%"
+        perPersonLabel.text = String(format: "$%0.2f", tip.perPerson)
+        peopleLabel.text = "We are: \(quantityPeople.text ?? "1")"
     }
 
+    @IBAction func quantityDidChanged(_ sender: Any) {
+        setTipCalculationValues()
+        updateUI()
+    }
+    
+    
     @IBAction func billAmountDidChanged(_ sender: Any) {
         setTipCalculationValues()
         updateUI()
